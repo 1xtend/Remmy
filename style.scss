@@ -1,0 +1,191 @@
+$fontRoboto: 'Roboto', serif;
+
+$colorMain: #071330;
+$colorBlue: #3D55F9;
+$colorGray: rgba(7, 19, 48, 0.6);
+$colorBeige: #F0BCA3;
+$colorWhite: #FFFFFF;
+
+// Global
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header, main, footer {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+// Header
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.c-head {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    margin-left: 64px;
+
+    .menu-item {
+        margin-left: 40px;
+
+        .menu-link {
+            font-size: 0.9rem;
+            font-family: $fontRoboto;
+            font-weight: 400;
+            line-height: 1.1em;
+            color: $colorMain;
+        }
+    }
+}
+
+.btn-header {
+    font-family: $fontRoboto;
+    font-weight: 400;
+    padding: 11px 20px;
+    color: $colorWhite;
+    background: $colorBlue;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &:hover {
+        background: #2740e0;
+    }
+
+    &:active {
+        background: #1c33ca;
+    }
+}
+
+// Finally 
+
+.finally {
+    margin-top: 14px;
+    display: flex;
+    position: relative;
+    
+    .women {
+        position: absolute;
+        right: 65px;
+        z-index: 1;
+    }
+}
+
+.answers {
+    padding-top: 130px;
+    width: 500px;
+
+    h2 {
+        font-size: 2.7em;
+        line-height: 50px;
+        font-family: $fontRoboto;
+        font-weight: 400;
+        color: $colorMain
+    }
+
+    p {
+        padding: 80px 0 24px;
+        font-size: 1.125em;
+        line-height: 32px;
+        font-family: $fontRoboto;
+        font-weight: 400;
+        width: 450px;
+        color: $colorMain
+    }
+}
+
+.act {
+    position: relative;
+    z-index: 2;
+    // width: 500px;
+    height: 80px;
+
+    input {
+        padding: 31px 300px 31px 32px;
+        background: $colorWhite;
+        border: 2px solid $colorWhite;
+        box-shadow: 0px 8px 24px rgba(7, 19, 48, 0.06);
+        border-radius: 20px;
+        
+        &::placeholder {
+            font-family: $fontRoboto;
+            font-weight: 700;
+            color: $colorMain;
+        }
+    }
+
+    .btn-act {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        padding: 19px 30px 17px;
+        background: $colorBlue;
+        border: none;
+        border-radius: 12px;
+        font-family: $fontRoboto;
+        font-weight: 700;
+        line-height: 20px;
+        color: $colorWhite;
+        cursor: pointer;
+
+        &:hover {
+            background: #2740e0;
+        }
+    
+        &:active {
+            background: #1c33ca;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
